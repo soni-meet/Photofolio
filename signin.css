@@ -1,0 +1,43 @@
+:root {
+    /* GREEN THEME */
+    --color-primary:#ff7b02;
+    --color-primary-variant:#e5a55d;
+    --color-bg-1:#000e17;
+    --color-bg-2:#001e2d;
+    --color-bg-3:#012734;
+    --color-bg-4:#003347;
+    --color-light:#85a2b2;
+    --color-white: hsl(0, 0%, 90%);
+  
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
+    --transition: all 400ms ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family:'Montserrat', sans-serif;
+    background: var(--color-bg-3);
+    color: var(--color-light);
+    line-height: 1.7;
+  }
+  .container {
+   
+    background-size: cover;
+    background-position: center;
+   
+  }
+  

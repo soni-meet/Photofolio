@@ -1,0 +1,191 @@
+:root {
+  /* GREEN THEME */
+  --color-primary:#ff7b02;
+  --color-primary-variant:#e5a55d;
+  --color-bg-1:#000e17;
+  --color-bg-2:#001e2d;
+  --color-bg-3:#012734;
+  --color-bg-4:#003347;
+  --color-light:#85a2b2;
+  --color-white: hsl(0, 0%, 90%);
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+  --transition: all 400ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  background: var(--color-bg-3);
+  color: var(--color-light);
+  line-height: 1.7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('imgbg1.jpg');
+  background-size: cover;
+  background-position: center;
+ 
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  color: rgb(213, 149, 54);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #333;
+  animation: header-appear 2s ease-in-out;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: rgb(213, 149, 54);
+  margin-top: 20px;
+  text-shadow: 1px 1px #333;
+  animation: header-appear 2s ease-in-out;
+}
+
+@keyframes header-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(15, 45, 94, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  height:100vx;
+  width:600px;
+  margin-left:20px;
+  box-shadow: 0 0 10px rgb(73, 51, 114);
+  animation: form-appear 2s ease-in-out;
+}
+
+@keyframes form-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  animation: input-appear 2s ease-in-out;
+}
+
+@keyframes input-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #ff7b02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  animation: button-appear 2s ease-in-out;
+}
+
+@keyframes button-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#lguser {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  background-color: #ff7b02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  animation: button-appear 2s ease-in-out;
+}
+#lgphotographer {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  background-color: #ff7b02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  animation: button-appear 2s ease-in-out;
+}
+#lgskip {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: #ff7b02;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  animation: button-appear 2s ease-in-out;
+}
